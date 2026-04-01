@@ -1,0 +1,32 @@
+{
+  "index": {
+    "title": "Наш Лимон",
+    "description": "Путь к финансовой независимости в Германии для русскоязычных.",
+    "keywords": "Путь к финансовой независимости в Германии для русскоязычных"    
+  },
+  "about": {
+    "title": "DIOSA KOSMETIK - About",
+    "description": "Über Diosa",
+    "keywords": "kosmetik dortmund essen bochum kosmetik studio haut wimpern augenbrauen kopfhaut haare",
+    "purecounter_customer": 450,
+    "purecounter_services": 25,
+    "purecounter_consulting": 710,
+    "purecounter_worker": 2
+  },
+  "impressum": {
+    "title": "DIOSA KOSMETIK - Impressum",
+    "description": "Impressum",
+    "keywords": "kosmetik dortmund essen bochum kosmetik studio haut wimpern augenbrauen kopfhaut haare"
+  },
+  "contact": {
+    "title": "DIOSA KOSMETIK - Kontakt",
+    "description": "Kontakt",
+    "keywords": "kosmetik dortmund essen bochum kosmetik studio haut wimpern augenbrauen kopfhaut haare"
+  },
+  "portfolio-details": {
+    "layout": false
+  },  
+  "sitemap.xml": {
+    "layout": false
+  }
+}

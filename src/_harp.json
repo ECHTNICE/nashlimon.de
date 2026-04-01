@@ -1,0 +1,25 @@
+{
+  "globals": {
+    "title": "Наш Лимон",
+    "description": "Путь к финансовой независимости в Германии для русскоязычных.",
+    "keywords": "affiliate, marketing, million, ein, jahr, deutschland, millionär, klub",
+    "id": {
+      "google": "G-GFHZNXR9VW"
+    },
+    "social": {
+      "web": "https://nashlimon.de",
+      "tiktok": "https://www.tiktok.com/@nashlimon.de",
+      "youtube": "https://www.youtube.com/@nashlimon",
+      "instagram": "https://www.instagram.com/nashlimon",
+      "twitter": "https://www.instagram.com/nashlimon",
+      "telegram": "https://t.me/nashlimon"
+    },
+    "person": {
+      "name": "Paul Mizel",
+      "street": "Johann-Heckeroth-Str. 21",
+      "city": "44143, Dortmund, Deutschland",
+      "mail": "info@nashlimon.de",
+      "website": "https://nashlimon.de"
+    }
+  }
+}

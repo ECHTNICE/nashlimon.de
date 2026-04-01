@@ -1,0 +1,79 @@
+<main id="main">
+    <!-- ======= Data Section ======= -->
+    <section id="data" class="data">
+        <div class="container" data-aos="fade-up">
+
+            <h1>__filename </h1>
+            <pre>
+                <%= __filename %>
+            </pre>
+
+            <h1>dirname(__filename) </h1>
+            <pre>
+                <%= "TDDO:"+__filename %>
+            </pre>
+            
+            <h1>RootPath? </h1>
+            <pre>
+                <%= process.cwd()+"\\src\\"+current.source+".ejs"==__filename?"":"../" %>
+                <%= process.cwd()+"\\src\\"+current.source+".ejs"==__filename?"TRUE":"FALSE" %>
+            </pre>
+
+
+
+            <h1>process.cwd() </h1>
+            <pre>
+                <%= process.cwd() %>
+            </pre>
+            
+
+            <h1>current props </h1>
+            <pre>
+                <%= Object.getOwnPropertyNames(current) %>
+            </pre>
+
+            <h1>global props </h1>
+            <pre>
+                <%= Object.getOwnPropertyNames(global) %>
+            </pre>
+
+            <h1>social props from globals</h1>
+            <pre>
+                <%= JSON.stringify(social, null, 2) %>
+            </pre>
+
+            <%- pricelist.haircare_premium %>
+
+            <h1>process props </h1>
+            <pre>
+                <%= Object.getOwnPropertyNames(process) %>
+            </pre>
+
+            <h1>process.argv </h1>
+            <pre>
+                <%= process.argv %>
+            </pre>
+
+            <h1>process.env </h1>
+            <pre>
+                <%= JSON.stringify(process.env, null, 2) %>
+            </pre>
+
+            <h1>process.arch </h1>
+            <pre>
+                <%= process.arch %>
+            </pre>
+
+            <h1>public</h1>
+            <pre>
+                <%= JSON.stringify(public, null, 2) %>
+            </pre>
+
+            <h1>public._data</h1>
+            <pre>
+                <%= JSON.stringify(public._data, null, 2) %>
+            </pre>
+
+        </div>
+    </section>
+</main>
