@@ -1,0 +1,106 @@
+ body {
+     font-family: 'Segoe UI', Tahoma, sans-serif;
+     background-color: #ffffff;
+     color: #2c3e50;
+ }
+
+ h1 {
+     font-size: 5rem;
+     font-weight: 750;
+     color: #2c3e50;
+ }
+
+ h2, .lead
+ {
+    color: #3b7341 !important;
+    font-weight: 600;
+    font-size: 1.5rem !important;
+ }
+
+ h3,
+ h4 {
+     color: #3b7341;
+ }
+
+ a {
+    color: #2c3e50; 
+    
+ }
+
+ a:active,
+ a:hover {
+    color: #3b7341; 
+ }
+
+ .navbar-brand img {
+     height: 40px;
+     margin-right: 10px;
+ }
+
+ .hero {
+     padding: 60px 0;
+     border-bottom: 1px solid #eee;
+ }
+
+ .hero img {
+     width: 75%;
+ }
+
+ .post-card {
+     transition: all 0.2s ease;
+ }
+
+ .post-card:hover {
+     transform: translateY(-5px);
+     box-shadow: 0 10px 25px rgba(0, 0, 0, 0.05);
+ }
+
+ .post-card img {
+     object-fit: cover;
+ }
+
+ footer {
+     margin-top: 60px;
+     padding: 30px;
+     background-color: #f8f9fa;
+     color: #777;
+     font-size: 14px;
+ }
+
+
+ .social-btn {
+     display: inline-flex;
+     align-items: center;
+     justify-content: center;
+     width: 42px;
+     height: 42px;
+     border-radius: 50%;
+     color: white;
+     font-size: 1.3rem;
+     transition: transform 0.3s, box-shadow 0.3s;
+ }
+
+ .social-btn:hover {
+     transform: scale(1.2);
+     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+ }
+
+ .youtube {
+     background: #FF0000;
+ }
+
+ .tiktok {
+     background: linear-gradient(45deg, #222, #555);
+ }
+
+ .instagram {
+     background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fd5949 45%, #d6249f 60%, #285AEB 90%);
+ }
+
+ .telegram {
+     background: #0088cc;
+ }
+
+ .twitter {
+     background: #1DA1F2;
+ }

@@ -10,48 +10,13 @@
 <link rel="manifest" href="img/favicon/site.webmanifest">
 <!-- Bootstrap 5 CDN -->
 <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
-<style>
-body {
-font-family: 'Segoe UI', Tahoma, sans-serif;
-background-color: #ffffff;
-color: #2c3e50;
-}
-.navbar-brand img {
-height: 40px;
-margin-right: 10px;
-}
-.hero {
-padding: 60px 0;
-border-bottom: 1px solid #eee;
-}
-.hero h1 {
-font-weight: 600;
-}
-.post-card {
-transition: all 0.2s ease;
-}
-.post-card:hover {
-transform: translateY(-5px);
-box-shadow: 0 10px 25px rgba(0,0,0,0.05);
-}
-.post-card img {
-height: 200px;
-object-fit: cover;
-}
-footer {
-margin-top: 60px;
-padding: 30px;
-background-color: #f8f9fa;
-color: #777;
-font-size: 14px;
-}
-</style>
+<link href="css/style.css" rel="stylesheet">
 </head>
 <body>
 <!-- Navbar -->
 <nav class="navbar navbar-expand-lg bg-white border-bottom">
 <div class="container">
-<a class="navbar-brand d-flex align-items-center" href="#">
+<a class="navbar-brand d-flex align-items-center" href="/">
 <img src="img/logo.png" alt="Logo">
 <strong>Наш Лимон €</strong>
 </a>
@@ -61,9 +26,8 @@ font-size: 14px;
 <div class="collapse navbar-collapse" id="nav">
 <ul class="navbar-nav ms-auto">
 <li class="nav-item"><a class="nav-link" href="/">Главная</a></li>
-<li class="nav-item"><a class="nav-link" href="blog.html">Статьи</a></li>
-<li class="nav-item"><a class="nav-link" href="finance.html">Финансы</a></li>
-<li class="nav-item"><a class="nav-link" href="kontakt.html">Контакты</a></li>
+<li class="nav-item"><a class="nav-link" href="about.html">О нас</a></li>
+<li class="nav-item"><a class="nav-link" href="blog.html">Блог</a></li>
 </ul>
 </div>
 </div>
@@ -119,80 +83,54 @@ C:\Program Files\nodejs\node.exe,C:\Users\Nutzer\AppData\Roaming\npm\node_module
 <h1>process.env </h1>
 <pre>
 {
-  &#34;ACLOCAL_PATH&#34;: &#34;C:\\Program Files\\Git\\mingw64\\share\\aclocal;C:\\Program Files\\Git\\usr\\share\\aclocal&#34;,
   &#34;ALLUSERSPROFILE&#34;: &#34;C:\\ProgramData&#34;,
   &#34;APPDATA&#34;: &#34;C:\\Users\\Nutzer\\AppData\\Roaming&#34;,
-  &#34;COMMONPROGRAMFILES&#34;: &#34;C:\\Program Files\\Common Files&#34;,
-  &#34;COMPUTERNAME&#34;: &#34;ECHTNIZE-PC&#34;,
-  &#34;COMSPEC&#34;: &#34;C:\\WINDOWS\\system32\\cmd.exe&#34;,
-  &#34;CONFIG_SITE&#34;: &#34;C:/Program Files/Git/mingw64/etc/config.site&#34;,
+  &#34;CommonProgramFiles&#34;: &#34;C:\\Program Files\\Common Files&#34;,
   &#34;CommonProgramFiles(x86)&#34;: &#34;C:\\Program Files (x86)\\Common Files&#34;,
   &#34;CommonProgramW6432&#34;: &#34;C:\\Program Files\\Common Files&#34;,
-  &#34;DISPLAY&#34;: &#34;needs-to-be-defined&#34;,
+  &#34;COMPUTERNAME&#34;: &#34;ECHTNIZE-PC&#34;,
+  &#34;ComSpec&#34;: &#34;C:\\WINDOWS\\system32\\cmd.exe&#34;,
   &#34;DriverData&#34;: &#34;C:\\Windows\\System32\\Drivers\\DriverData&#34;,
-  &#34;EXEPATH&#34;: &#34;C:\\Program Files\\Git&#34;,
   &#34;FTSDK_DIR&#34;: &#34;C:\\Program Files\\Microsoft SDKs\\Kinect\\Developer Toolkit v1.8.0\\&#34;,
-  &#34;HOME&#34;: &#34;C:\\Users\\Nutzer&#34;,
   &#34;HOMEDRIVE&#34;: &#34;C:&#34;,
   &#34;HOMEPATH&#34;: &#34;\\Users\\Nutzer&#34;,
-  &#34;HOSTNAME&#34;: &#34;ECHTNIZE-PC&#34;,
-  &#34;INFOPATH&#34;: &#34;C:\\Program Files\\Git\\usr\\local\\info;C:\\Program Files\\Git\\usr\\share\\info;C:\\Program Files\\Git\\usr\\info;C:\\Program Files\\Git\\share\\info&#34;,
   &#34;IntelliJ IDEA Community Edition&#34;: &#34;C:\\Program Files\\JetBrains\\IntelliJ IDEA Community Edition 2019.3.1\\bin;&#34;,
   &#34;JetBrains Rider&#34;: &#34;C:\\Program Files\\JetBrains\\JetBrains Rider 2020.1.0\\bin;&#34;,
   &#34;KINECTSDK10_DIR&#34;: &#34;C:\\Program Files\\Microsoft SDKs\\Kinect\\v1.8\\&#34;,
   &#34;KINECTSDK20_DIR&#34;: &#34;C:\\Program Files\\Microsoft SDKs\\Kinect\\v2.0_1409\\&#34;,
   &#34;KINECT_TOOLKIT_DIR&#34;: &#34;C:\\Program Files\\Microsoft SDKs\\Kinect\\Developer Toolkit v1.8.0\\&#34;,
-  &#34;LANG&#34;: &#34;de_DE.UTF-8&#34;,
   &#34;LOCALAPPDATA&#34;: &#34;C:\\Users\\Nutzer\\AppData\\Local&#34;,
   &#34;LOGONSERVER&#34;: &#34;\\\\ECHTNIZE-PC&#34;,
-  &#34;MANPATH&#34;: &#34;C:\\Program Files\\Git\\mingw64\\local\\man;C:\\Program Files\\Git\\mingw64\\share\\man;C:\\Program Files\\Git\\usr\\local\\man;C:\\Program Files\\Git\\usr\\share\\man;C:\\Program Files\\Git\\usr\\man;C:\\Program Files\\Git\\share\\man&#34;,
-  &#34;MINGW_CHOST&#34;: &#34;x86_64-w64-mingw32&#34;,
-  &#34;MINGW_PACKAGE_PREFIX&#34;: &#34;mingw-w64-x86_64&#34;,
-  &#34;MINGW_PREFIX&#34;: &#34;C:/Program Files/Git/mingw64&#34;,
-  &#34;MSYSTEM&#34;: &#34;MINGW64&#34;,
-  &#34;MSYSTEM_CARCH&#34;: &#34;x86_64&#34;,
-  &#34;MSYSTEM_CHOST&#34;: &#34;x86_64-w64-mingw32&#34;,
-  &#34;MSYSTEM_PREFIX&#34;: &#34;C:/Program Files/Git/mingw64&#34;,
   &#34;NUMBER_OF_PROCESSORS&#34;: &#34;16&#34;,
   &#34;NVM_HOME&#34;: &#34;C:\\Users\\Nutzer\\AppData\\Roaming\\nvm&#34;,
   &#34;NVM_SYMLINK&#34;: &#34;C:\\Program Files\\nodejs&#34;,
-  &#34;ORIGINAL_PATH&#34;: &#34;C:\\Program Files\\Git\\mingw64\\bin;C:\\Program Files\\Git\\usr\\bin;C:\\Users\\Nutzer\\bin;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0;C:\\Windows\\System32\\OpenSSH;C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common;C:\\Program Files\\Git\\cmd;C:\\Program Files (x86)\\Windows Live\\Shared;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0;C:\\WINDOWS\\System32\\OpenSSH;C:\\Program Files\\IDM Computer Solutions\\UltraEdit;C:\\Users\\Nutzer\\AppData\\Roaming\\nvm;C:\\Program Files\\nodejs;C:\\Program Files\\CMake\\bin;C:\\Program Files\\nodejs;C:\\Program Files\\NVIDIA Corporation\\NVIDIA app\\NvDLISR;C:\\Program Files (x86)\\Common Files\\Acronis\\SnapAPI;C:\\Program Files (x86)\\Common Files\\Acronis\\VirtualFile;C:\\Program Files (x86)\\Common Files\\Acronis\\VirtualFile64;C:\\Users\\Nutzer\\.cargo\\bin;C:\\Users\\Nutzer\\AppData\\Local\\Microsoft\\WindowsApps;C:\\Users\\Nutzer\\AppData\\Local\\GitHubDesktop\\bin;C:\\Program Files\\JetBrains\\IntelliJ IDEA Community Edition 2019.3.1\\bin;C:\\Program Files\\JetBrains\\JetBrains Rider 2020.1.0\\bin;C:\\Users\\Nutzer\\AppData\\Local\\Microsoft\\WindowsApps;C:\\Program Files\\MariaDB 10.6\\bin;C:\\Users\\Nutzer\\AppData\\Local\\Programs\\Microsoft VS Code\\bin;C:\\GTK\\bin;C:\\Users\\Nutzer\\AppData\\Roaming\\nvm;C:\\Program Files\\nodejs;C:\\Users\\Nutzer\\AppData\\Roaming\\npm;C:\\Program Files\\ffmpeg\\bin;C:\\Users\\Nutzer\\AppData\\Roaming\\Amazon;C:\\Users\\Nutzer\\AppData\\Local\\Programs\\MiKTeX\\miktex\\bin\\x64&#34;,
-  &#34;ORIGINAL_TEMP&#34;: &#34;C:/Users/Nutzer/AppData/Local/Temp&#34;,
-  &#34;ORIGINAL_TMP&#34;: &#34;C:/Users/Nutzer/AppData/Local/Temp&#34;,
-  &#34;OS&#34;: &#34;Windows_NT&#34;,
   &#34;OneDrive&#34;: &#34;C:\\Users\\Nutzer\\OneDrive&#34;,
-  &#34;PATH&#34;: &#34;C:\\Users\\Nutzer\\bin;C:\\Program Files\\Git\\mingw64\\bin;C:\\Program Files\\Git\\usr\\local\\bin;C:\\Program Files\\Git\\usr\\bin;C:\\Program Files\\Git\\usr\\bin;C:\\Program Files\\Git\\mingw64\\bin;C:\\Program Files\\Git\\usr\\bin;C:\\Users\\Nutzer\\bin;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0;C:\\Windows\\System32\\OpenSSH;C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common;C:\\Program Files\\Git\\cmd;C:\\Program Files (x86)\\Windows Live\\Shared;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0;C:\\WINDOWS\\System32\\OpenSSH;C:\\Program Files\\IDM Computer Solutions\\UltraEdit;C:\\Users\\Nutzer\\AppData\\Roaming\\nvm;C:\\Program Files\\nodejs;C:\\Program Files\\CMake\\bin;C:\\Program Files\\nodejs;C:\\Program Files\\NVIDIA Corporation\\NVIDIA app\\NvDLISR;C:\\Program Files (x86)\\Common Files\\Acronis\\SnapAPI;C:\\Program Files (x86)\\Common Files\\Acronis\\VirtualFile;C:\\Program Files (x86)\\Common Files\\Acronis\\VirtualFile64;C:\\Users\\Nutzer\\.cargo\\bin;C:\\Users\\Nutzer\\AppData\\Local\\Microsoft\\WindowsApps;C:\\Users\\Nutzer\\AppData\\Local\\GitHubDesktop\\bin;C:\\Program Files\\JetBrains\\IntelliJ IDEA Community Edition 2019.3.1\\bin;C:\\Program Files\\JetBrains\\JetBrains Rider 2020.1.0\\bin;C:\\Users\\Nutzer\\AppData\\Local\\Microsoft\\WindowsApps;C:\\Program Files\\MariaDB 10.6\\bin;C:\\Users\\Nutzer\\AppData\\Local\\Programs\\Microsoft VS Code\\bin;C:\\GTK\\bin;C:\\Users\\Nutzer\\AppData\\Roaming\\nvm;C:\\Program Files\\nodejs;C:\\Users\\Nutzer\\AppData\\Roaming\\npm;C:\\Program Files\\ffmpeg\\bin;C:\\Users\\Nutzer\\AppData\\Roaming\\Amazon;C:\\Users\\Nutzer\\AppData\\Local\\Programs\\MiKTeX\\miktex\\bin\\x64;C:\\Program Files\\Git\\usr\\bin\\vendor_perl;C:\\Program Files\\Git\\usr\\bin\\core_perl&#34;,
+  &#34;OS&#34;: &#34;Windows_NT&#34;,
+  &#34;Path&#34;: &#34;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Windows\\System32\\OpenSSH\\;C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common;C:\\Program Files\\Git\\cmd;C:\\Program Files (x86)\\Windows Live\\Shared;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;C:\\WINDOWS\\System32\\OpenSSH\\;C:\\Program Files\\IDM Computer Solutions\\UltraEdit;C:\\Users\\Nutzer\\AppData\\Roaming\\nvm;C:\\Program Files\\nodejs;C:\\Program Files\\CMake\\bin;C:\\Program Files\\nodejs\\;C:\\Program Files\\NVIDIA Corporation\\NVIDIA app\\NvDLISR;C:\\Program Files (x86)\\Common Files\\Acronis\\SnapAPI\\;C:\\Program Files (x86)\\Common Files\\Acronis\\VirtualFile\\;C:\\Program Files (x86)\\Common Files\\Acronis\\VirtualFile64\\;C:\\Users\\Nutzer\\.cargo\\bin;C:\\Users\\Nutzer\\AppData\\Local\\Microsoft\\WindowsApps;C:\\Users\\Nutzer\\AppData\\Local\\GitHubDesktop\\bin;C:\\Program Files\\JetBrains\\IntelliJ IDEA Community Edition 2019.3.1\\bin;;C:\\Program Files\\JetBrains\\JetBrains Rider 2020.1.0\\bin;;C:\\Users\\Nutzer\\AppData\\Local\\Microsoft\\WindowsApps;C:\\Program Files\\MariaDB 10.6\\bin;C:\\Users\\Nutzer\\AppData\\Local\\Programs\\Microsoft VS Code\\bin;C:\\GTK\\bin;C:\\Users\\Nutzer\\AppData\\Roaming\\nvm;C:\\Program Files\\nodejs;C:\\Users\\Nutzer\\AppData\\Roaming\\npm;C:\\Program Files\\ffmpeg\\bin;C:\\Users\\Nutzer\\AppData\\Roaming\\Amazon;C:\\Users\\Nutzer\\AppData\\Local\\Programs\\MiKTeX\\miktex\\bin\\x64\\&#34;,
   &#34;PATHEXT&#34;: &#34;.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC&#34;,
-  &#34;PKG_CONFIG_PATH&#34;: &#34;C:\\Program Files\\Git\\mingw64\\lib\\pkgconfig;C:\\Program Files\\Git\\mingw64\\share\\pkgconfig&#34;,
-  &#34;PLINK_PROTOCOL&#34;: &#34;ssh&#34;,
   &#34;PROCESSOR_ARCHITECTURE&#34;: &#34;AMD64&#34;,
   &#34;PROCESSOR_IDENTIFIER&#34;: &#34;AMD64 Family 23 Model 113 Stepping 0, AuthenticAMD&#34;,
   &#34;PROCESSOR_LEVEL&#34;: &#34;23&#34;,
   &#34;PROCESSOR_REVISION&#34;: &#34;7100&#34;,
-  &#34;PROGRAMFILES&#34;: &#34;C:\\Program Files&#34;,
-  &#34;PSModulePath&#34;: &#34;C:\\Program Files\\WindowsPowerShell\\Modules;C:\\WINDOWS\\system32\\WindowsPowerShell\\v1.0\\Modules&#34;,
-  &#34;PUBLIC&#34;: &#34;C:\\Users\\Public&#34;,
-  &#34;PWD&#34;: &#34;D:/git/nashlimon.de&#34;,
   &#34;ProgramData&#34;: &#34;C:\\ProgramData&#34;,
+  &#34;ProgramFiles&#34;: &#34;C:\\Program Files&#34;,
   &#34;ProgramFiles(x86)&#34;: &#34;C:\\Program Files (x86)&#34;,
   &#34;ProgramW6432&#34;: &#34;C:\\Program Files&#34;,
+  &#34;PROMPT&#34;: &#34;$P$G&#34;,
+  &#34;PSModulePath&#34;: &#34;C:\\Program Files\\WindowsPowerShell\\Modules;C:\\WINDOWS\\system32\\WindowsPowerShell\\v1.0\\Modules&#34;,
+  &#34;PUBLIC&#34;: &#34;C:\\Users\\Public&#34;,
   &#34;SESSIONNAME&#34;: &#34;Console&#34;,
-  &#34;SHELL&#34;: &#34;C:\\Program Files\\Git\\usr\\bin\\bash.exe&#34;,
-  &#34;SHLVL&#34;: &#34;1&#34;,
-  &#34;SSH_ASKPASS&#34;: &#34;C:/Program Files/Git/mingw64/libexec/git-core/git-gui--askpass&#34;,
-  &#34;SYSTEMDRIVE&#34;: &#34;C:&#34;,
-  &#34;SYSTEMROOT&#34;: &#34;C:\\WINDOWS&#34;,
+  &#34;SystemDrive&#34;: &#34;C:&#34;,
+  &#34;SystemRoot&#34;: &#34;C:\\WINDOWS&#34;,
   &#34;TEMP&#34;: &#34;C:\\Users\\Nutzer\\AppData\\Local\\Temp&#34;,
-  &#34;TERM&#34;: &#34;xterm&#34;,
   &#34;TMP&#34;: &#34;C:\\Users\\Nutzer\\AppData\\Local\\Temp&#34;,
-  &#34;TMPDIR&#34;: &#34;C:\\Users\\Nutzer\\AppData\\Local\\Temp&#34;,
   &#34;USERDOMAIN&#34;: &#34;ECHTNIZE-PC&#34;,
   &#34;USERDOMAIN_ROAMINGPROFILE&#34;: &#34;ECHTNIZE-PC&#34;,
   &#34;USERNAME&#34;: &#34;Nutzer&#34;,
   &#34;USERPROFILE&#34;: &#34;C:\\Users\\Nutzer&#34;,
   &#34;VBOX_HWVIRTEX_IGNORE_SVM_IN_USE&#34;: &#34;1&#34;,
   &#34;VBOX_MSI_INSTALL_PATH&#34;: &#34;C:\\Program Files\\Oracle\\VirtualBox\\&#34;,
-  &#34;WINDIR&#34;: &#34;C:\\WINDOWS&#34;,
+  &#34;windir&#34;: &#34;C:\\WINDOWS&#34;,
   &#34;__PSLockDownPolicy&#34;: &#34;0&#34;
 }
 </pre>
@@ -204,8 +142,10 @@ x64
 <pre>
 {
   &#34;_contents&#34;: [
-    &#34;01-vorstellung.html&#34;,
     &#34;about.html&#34;,
+    &#34;blog.html&#34;,
+    &#34;blog_banking.html&#34;,
+    &#34;blog_socialmedia.html&#34;,
     &#34;CNAME&#34;,
     &#34;data.html&#34;,
     &#34;datenschutz.html&#34;,
@@ -247,11 +187,18 @@ x64
     }
   },
   &#34;css&#34;: {
+    &#34;_contents&#34;: [
+      &#34;style.css&#34;
+    ],
     &#34;_data&#34;: {}
   },
   &#34;img&#34;: {
     &#34;_contents&#34;: [
+      &#34;blog.psd&#34;,
+      &#34;blog_00.png&#34;,
       &#34;blog_1.png&#34;,
+      &#34;blog_bank.png&#34;,
+      &#34;blog_socialmedia.png&#34;,
       &#34;limon.png&#34;,
       &#34;logo-removebg-preview.png&#34;,
       &#34;logo.png&#34;
@@ -316,25 +263,19 @@ x64
 <div class="row">
 <!-- Компания -->
 <div class="col-md-3 col-lg-3 col-xl-3 mx-auto mt-3">
-<h5 class="text-uppercase mb-4 font-weight-bold">Компания</h5>
-<p><a href="#" class="text-dark text-decoration-none">О нас</a></p>
-<p><a href="#" class="text-dark text-decoration-none">Услуги</a></p>
-<p><a href="#" class="text-dark text-decoration-none">Блог</a></p>
-<p><a href="#" class="text-dark text-decoration-none">Контакты</a></p>
+<h5 class="text-uppercase mb-4 font-weight-bold">Наш лимон клуб</h5>
+<p><a href="about.html" class="text-dark text-decoration-none">О нас</a></p>
+<p><a href="blog.html" class="text-dark text-decoration-none">Блог</a></p>
 </div>
 <!-- Полезное -->
 <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mt-3">
-<h5 class="text-uppercase mb-4 font-weight-bold">Полезное</h5>
-<p><a href="#" class="text-dark text-decoration-none">Импресум</a></p>
-<p><a href="#" class="text-dark text-decoration-none">Политика конфиденциальности</a></p>
-<p><a href="#" class="text-dark text-decoration-none">Условия использования</a></p>
 </div>
 <!-- Контакты -->
 <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mt-3">
-<h5 class="text-uppercase mb-4 font-weight-bold">Контакты</h5>
+<h5 class="text-uppercase mb-4 font-weight-bold">Контакт</h5>
 <p><i class="bi bi-house-door-fill me-2"></i> Dortmund, Deutschland</p>
-<p><i class="bi bi-envelope-fill me-2"></i> info@nashlimon.de</p>
-<p><i class="bi bi-telephone-fill me-2"></i> +...</p>
+<p><i class="bi bi-envelope-fill me-2"></i> <a href="mailto:info@nashlimon.de">info@nashlimon.de</a></p>
+<!--<p><i class="bi bi-telephone-fill me-2"></i> +...</p>-->
 </div>
 <!-- Социальные сети -->
 <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mt-3">
@@ -362,29 +303,6 @@ x64
 </footer>
 <!-- Bootstrap Icons -->
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
-<!-- Social Media Styles -->
-<style>
-.social-btn {
-display: inline-flex;
-align-items: center;
-justify-content: center;
-width: 42px;
-height: 42px;
-border-radius: 50%;
-color: white;
-font-size: 1.3rem;
-transition: transform 0.3s, box-shadow 0.3s;
-}
-.social-btn:hover {
-transform: scale(1.2);
-box-shadow: 0 4px 10px rgba(0,0,0,0.2);
-}
-.youtube { background: #FF0000; }
-.tiktok { background: linear-gradient(45deg,#222,#555); }
-.instagram { background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fd5949 45%, #d6249f 60%, #285AEB 90%); }
-.telegram { background: #0088cc; }
-.twitter { background: #1DA1F2; }
-</style>
 <!-- Bootstrap JS -->
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 <!-- ===================== -->

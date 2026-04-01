@@ -10,48 +10,13 @@
 <link rel="manifest" href="img/favicon/site.webmanifest">
 <!-- Bootstrap 5 CDN -->
 <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
-<style>
-body {
-font-family: 'Segoe UI', Tahoma, sans-serif;
-background-color: #ffffff;
-color: #2c3e50;
-}
-.navbar-brand img {
-height: 40px;
-margin-right: 10px;
-}
-.hero {
-padding: 60px 0;
-border-bottom: 1px solid #eee;
-}
-.hero h1 {
-font-weight: 600;
-}
-.post-card {
-transition: all 0.2s ease;
-}
-.post-card:hover {
-transform: translateY(-5px);
-box-shadow: 0 10px 25px rgba(0,0,0,0.05);
-}
-.post-card img {
-height: 200px;
-object-fit: cover;
-}
-footer {
-margin-top: 60px;
-padding: 30px;
-background-color: #f8f9fa;
-color: #777;
-font-size: 14px;
-}
-</style>
+<link href="css/style.css" rel="stylesheet">
 </head>
 <body>
 <!-- Navbar -->
 <nav class="navbar navbar-expand-lg bg-white border-bottom">
 <div class="container">
-<a class="navbar-brand d-flex align-items-center" href="#">
+<a class="navbar-brand d-flex align-items-center" href="/">
 <img src="img/logo.png" alt="Logo">
 <strong>Наш Лимон €</strong>
 </a>
@@ -61,16 +26,83 @@ font-size: 14px;
 <div class="collapse navbar-collapse" id="nav">
 <ul class="navbar-nav ms-auto">
 <li class="nav-item"><a class="nav-link" href="/">Главная</a></li>
-<li class="nav-item"><a class="nav-link" href="blog.html">Статьи</a></li>
-<li class="nav-item"><a class="nav-link" href="finance.html">Финансы</a></li>
-<li class="nav-item"><a class="nav-link" href="kontakt.html">Контакты</a></li>
+<li class="nav-item"><a class="nav-link" href="about.html">О нас</a></li>
+<li class="nav-item"><a class="nav-link" href="blog.html">Блог</a></li>
 </ul>
 </div>
 </div>
 </nav>
-<!-- Blog Posts -->
 <div class="container">
-<div class="row g-4">
+<div class="col-lg-12 col-xl-12">
+<div class="text-center mb-5">
+<h1>О нас</h1>
+<p class="lead text-muted">Социальный эксперимент: наш &#127819; € - от 0 до 1 000 000 € за 52 недели</p>
+</div>
+<div class="card shadow-lg border-0 rounded-4 overflow-hidden">
+<div class="card-body p-5 p-lg-6">
+<p class="fs-5">
+Привет! Меня зовут <span class="highlight">Павел</span>.
+</p>
+<p class="fs-5">
+Я уже создал <strong>4 пассивных источника дохода</strong> и теперь запускаю социальный эксперимент.
+</p>
+<h2> ✋ <strong>Внимание:</strong> это не шутка!</h2>
+<p class="fs-5">
+<strong>1 апреля 2026 года</strong> я запускаю проект, цель которого — пройти путь от 0 до <span
+class="highlight">1 000 000 €</span> за 52 недели.
+</p>
+<hr class="my-5">
+<p class="fs-5">
+Я долго думал и решил делать всё максимально честно и открыто:
+</p>
+<ul class="list-unstyled fs-5">
+<li class="mb-3">✅ Без больших вложений</li>
+<li class="mb-3">✅ Без скрытого контента</li>
+<li class="mb-3">✅ Полная прозрачность на каждом шаге</li>
+</ul>
+<p class="fs-5">
+Я искренне рекомендую каждому, кто тоже хочет достичь 1 000 000 €, не пропустить эту информацию и следовать
+вместе со мной.
+</p>
+<div class="bg-light p-4 rounded-3 my-5">
+<p class="mb-0 fs-5">
+<strong>Важно:</strong> Здесь <strong>не продаются курсы</strong>. Это не <strong>инфоцыганская</strong>
+тусовка.
+Это трудолюбивый марафон, а не спринт.
+</p>
+</div>
+<p class="fs-5">
+Каждую неделю я буду публиковать новые материалы, чтобы шаг за шагом каждый желающий мог повторять за нами.
+</p>
+<h4 class="mt-5 mb-4 text-center highlight">Зачем я это делаю?</h4>
+<p class="fs-5 text-center">
+Чтобы помогать людям.<br>
+Те, кто меня знает, подтвердят: Я не гонюсь за деньгами.<br>
+Я ценю <strong>время</strong>, <strong>свободу</strong>, <strong>знание</strong> и
+<strong>сообщество</strong>.
+</p>
+<div class="text-center mt-5">
+<p class="fs-4 fw-semibold">
+Буду очень рад, если ты присоединишься к нам и поддержишь проект своей подпиской.
+</p>
+<p class="fs-5 mt-4">
+Спасибо тебе уже сейчас за твоё доверие! ❤️
+</p>
+</div>
+<!-- Небольшой призыв к действию -->
+<div class="text-center mt-5">
+<h2>
+Присоединиться к эксперименту
+</h2>
+<div class="d-flex justify-content-center gap-4 py-4">
+<a href="#" class="social-btn youtube"><i class="bi bi-youtube"></i></a>
+<a href="#" class="social-btn instagram"><i class="bi bi-instagram"></i></a>
+<a href="#" class="social-btn tiktok"><i class="bi bi-tiktok"></i></a>
+<a href="#" class="social-btn telegram"><i class="bi bi-telegram"></i></a>
+</div>
+</div>
+</div>
+</div>
 </div>
 </div>
 <!-- Footer -->
@@ -79,25 +111,19 @@ font-size: 14px;
 <div class="row">
 <!-- Компания -->
 <div class="col-md-3 col-lg-3 col-xl-3 mx-auto mt-3">
-<h5 class="text-uppercase mb-4 font-weight-bold">Компания</h5>
-<p><a href="#" class="text-dark text-decoration-none">О нас</a></p>
-<p><a href="#" class="text-dark text-decoration-none">Услуги</a></p>
-<p><a href="#" class="text-dark text-decoration-none">Блог</a></p>
-<p><a href="#" class="text-dark text-decoration-none">Контакты</a></p>
+<h5 class="text-uppercase mb-4 font-weight-bold">Наш лимон клуб</h5>
+<p><a href="about.html" class="text-dark text-decoration-none">О нас</a></p>
+<p><a href="blog.html" class="text-dark text-decoration-none">Блог</a></p>
 </div>
 <!-- Полезное -->
 <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mt-3">
-<h5 class="text-uppercase mb-4 font-weight-bold">Полезное</h5>
-<p><a href="#" class="text-dark text-decoration-none">Импресум</a></p>
-<p><a href="#" class="text-dark text-decoration-none">Политика конфиденциальности</a></p>
-<p><a href="#" class="text-dark text-decoration-none">Условия использования</a></p>
 </div>
 <!-- Контакты -->
 <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mt-3">
-<h5 class="text-uppercase mb-4 font-weight-bold">Контакты</h5>
+<h5 class="text-uppercase mb-4 font-weight-bold">Контакт</h5>
 <p><i class="bi bi-house-door-fill me-2"></i> Dortmund, Deutschland</p>
-<p><i class="bi bi-envelope-fill me-2"></i> info@nashlimon.de</p>
-<p><i class="bi bi-telephone-fill me-2"></i> +...</p>
+<p><i class="bi bi-envelope-fill me-2"></i> <a href="mailto:info@nashlimon.de">info@nashlimon.de</a></p>
+<!--<p><i class="bi bi-telephone-fill me-2"></i> +...</p>-->
 </div>
 <!-- Социальные сети -->
 <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mt-3">
@@ -125,29 +151,6 @@ font-size: 14px;
 </footer>
 <!-- Bootstrap Icons -->
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
-<!-- Social Media Styles -->
-<style>
-.social-btn {
-display: inline-flex;
-align-items: center;
-justify-content: center;
-width: 42px;
-height: 42px;
-border-radius: 50%;
-color: white;
-font-size: 1.3rem;
-transition: transform 0.3s, box-shadow 0.3s;
-}
-.social-btn:hover {
-transform: scale(1.2);
-box-shadow: 0 4px 10px rgba(0,0,0,0.2);
-}
-.youtube { background: #FF0000; }
-.tiktok { background: linear-gradient(45deg,#222,#555); }
-.instagram { background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fd5949 45%, #d6249f 60%, #285AEB 90%); }
-.telegram { background: #0088cc; }
-.twitter { background: #1DA1F2; }
-</style>
 <!-- Bootstrap JS -->
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 <!-- ===================== -->
