@@ -1,0 +1,4 @@
+User-agent: *
+Disallow: 
+
+Sitemap: https://www.nashlimon.de/sitemap.xml
