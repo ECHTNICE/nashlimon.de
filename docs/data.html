@@ -1,0 +1,492 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Наш Лимон</title>
+<link rel="apple-touch-icon" sizes="180x180" href="img/favicon/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="img/favicon/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="img/favicon/favicon-16x16.png">
+<link rel="manifest" href="img/favicon/site.webmanifest">
+<!-- Bootstrap 5 CDN -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+<style>
+body {
+font-family: 'Segoe UI', Tahoma, sans-serif;
+background-color: #ffffff;
+color: #2c3e50;
+}
+.navbar-brand img {
+height: 40px;
+margin-right: 10px;
+}
+.hero {
+padding: 60px 0;
+border-bottom: 1px solid #eee;
+}
+.hero h1 {
+font-weight: 600;
+}
+.post-card {
+transition: all 0.2s ease;
+}
+.post-card:hover {
+transform: translateY(-5px);
+box-shadow: 0 10px 25px rgba(0,0,0,0.05);
+}
+.post-card img {
+height: 200px;
+object-fit: cover;
+}
+footer {
+margin-top: 60px;
+padding: 30px;
+background-color: #f8f9fa;
+color: #777;
+font-size: 14px;
+}
+</style>
+</head>
+<body>
+<!-- Navbar -->
+<nav class="navbar navbar-expand-lg bg-white border-bottom">
+<div class="container">
+<a class="navbar-brand d-flex align-items-center" href="#">
+<img src="img/logo.png" alt="Logo">
+<strong>Наш Лимон €</strong>
+</a>
+<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#nav">
+<span class="navbar-toggler-icon"></span>
+</button>
+<div class="collapse navbar-collapse" id="nav">
+<ul class="navbar-nav ms-auto">
+<li class="nav-item"><a class="nav-link" href="/">Главная</a></li>
+<li class="nav-item"><a class="nav-link" href="blog.html">Статьи</a></li>
+<li class="nav-item"><a class="nav-link" href="finance.html">Финансы</a></li>
+<li class="nav-item"><a class="nav-link" href="kontakt.html">Контакты</a></li>
+</ul>
+</div>
+</div>
+</nav>
+<main id="main">
+<!-- ======= Data Section ======= -->
+<section id="data" class="data">
+<div class="container" data-aos="fade-up">
+<h1>__filename </h1>
+<pre>
+D:\git\nashlimon.de\src\data.ejs
+</pre>
+<h1>dirname(__filename) </h1>
+<pre>
+TDDO:D:\git\nashlimon.de\src\data.ejs
+</pre>
+<h1>RootPath? </h1>
+<pre>
+
+TRUE
+</pre>
+<h1>process.cwd() </h1>
+<pre>
+D:\git\nashlimon.de
+</pre>
+<h1>current props </h1>
+<pre>
+source,path
+</pre>
+<h1>global props </h1>
+<pre>
+Object,Function,Array,Number,parseFloat,parseInt,Infinity,NaN,undefined,Boolean,String,Symbol,Date,Promise,RegExp,Error,AggregateError,EvalError,RangeError,ReferenceError,SyntaxError,TypeError,URIError,globalThis,JSON,Math,console,Intl,ArrayBuffer,Uint8Array,Int8Array,Uint16Array,Int16Array,Uint32Array,Int32Array,Float32Array,Float64Array,Uint8ClampedArray,BigUint64Array,BigInt64Array,DataView,Map,BigInt,Set,WeakMap,WeakSet,Proxy,Reflect,FinalizationRegistry,WeakRef,decodeURI,decodeURIComponent,encodeURI,encodeURIComponent,escape,unescape,eval,isFinite,isNaN,global,process,Buffer,atob,btoa,URL,URLSearchParams,TextEncoder,TextDecoder,AbortController,AbortSignal,EventTarget,Event,MessageChannel,MessagePort,MessageEvent,clearInterval,clearTimeout,setInterval,setTimeout,queueMicrotask,performance,clearImmediate,setImmediate,SharedArrayBuffer,Atomics,WebAssembly,__core-js_shared__
+</pre>
+<h1>social props from globals</h1>
+<pre>
+{
+  &#34;web&#34;: &#34;https://nashlimon.de&#34;,
+  &#34;tiktok&#34;: &#34;https://www.tiktok.com/@nashlimon.de&#34;,
+  &#34;youtube&#34;: &#34;https://www.youtube.com/@nashlimon&#34;,
+  &#34;instagram&#34;: &#34;https://www.instagram.com/nashlimon&#34;,
+  &#34;twitter&#34;: &#34;https://www.instagram.com/nashlimon&#34;,
+  &#34;telegram&#34;: &#34;https://t.me/nashlimon&#34;
+}
+</pre>
+<h1>process props </h1>
+<pre>
+version,versions,arch,platform,release,_rawDebug,moduleLoadList,binding,_linkedBinding,_events,_eventsCount,_maxListeners,domain,_exiting,config,dlopen,uptime,_getActiveRequests,_getActiveHandles,reallyExit,_kill,cpuUsage,resourceUsage,memoryUsage,kill,exit,openStdin,allowedNodeEnvironmentFlags,assert,features,_fatalException,setUncaughtExceptionCaptureCallback,hasUncaughtExceptionCaptureCallback,emitWarning,nextTick,_tickCallback,_debugProcess,_debugEnd,_startProfilerIdleNotifier,_stopProfilerIdleNotifier,stdout,stdin,stderr,abort,umask,chdir,cwd,env,title,argv,execArgv,pid,ppid,execPath,debugPort,hrtime,argv0,_preload_modules,report,setSourceMapsEnabled,mainModule
+</pre>
+<h1>process.argv </h1>
+<pre>
+C:\Program Files\nodejs\node.exe,C:\Users\Nutzer\AppData\Roaming\npm\node_modules\harp\bin\harp,src,docs
+</pre>
+<h1>process.env </h1>
+<pre>
+{
+  &#34;ACLOCAL_PATH&#34;: &#34;C:\\Program Files\\Git\\mingw64\\share\\aclocal;C:\\Program Files\\Git\\usr\\share\\aclocal&#34;,
+  &#34;ALLUSERSPROFILE&#34;: &#34;C:\\ProgramData&#34;,
+  &#34;APPDATA&#34;: &#34;C:\\Users\\Nutzer\\AppData\\Roaming&#34;,
+  &#34;COMMONPROGRAMFILES&#34;: &#34;C:\\Program Files\\Common Files&#34;,
+  &#34;COMPUTERNAME&#34;: &#34;ECHTNIZE-PC&#34;,
+  &#34;COMSPEC&#34;: &#34;C:\\WINDOWS\\system32\\cmd.exe&#34;,
+  &#34;CONFIG_SITE&#34;: &#34;C:/Program Files/Git/mingw64/etc/config.site&#34;,
+  &#34;CommonProgramFiles(x86)&#34;: &#34;C:\\Program Files (x86)\\Common Files&#34;,
+  &#34;CommonProgramW6432&#34;: &#34;C:\\Program Files\\Common Files&#34;,
+  &#34;DISPLAY&#34;: &#34;needs-to-be-defined&#34;,
+  &#34;DriverData&#34;: &#34;C:\\Windows\\System32\\Drivers\\DriverData&#34;,
+  &#34;EXEPATH&#34;: &#34;C:\\Program Files\\Git&#34;,
+  &#34;FTSDK_DIR&#34;: &#34;C:\\Program Files\\Microsoft SDKs\\Kinect\\Developer Toolkit v1.8.0\\&#34;,
+  &#34;HOME&#34;: &#34;C:\\Users\\Nutzer&#34;,
+  &#34;HOMEDRIVE&#34;: &#34;C:&#34;,
+  &#34;HOMEPATH&#34;: &#34;\\Users\\Nutzer&#34;,
+  &#34;HOSTNAME&#34;: &#34;ECHTNIZE-PC&#34;,
+  &#34;INFOPATH&#34;: &#34;C:\\Program Files\\Git\\usr\\local\\info;C:\\Program Files\\Git\\usr\\share\\info;C:\\Program Files\\Git\\usr\\info;C:\\Program Files\\Git\\share\\info&#34;,
+  &#34;IntelliJ IDEA Community Edition&#34;: &#34;C:\\Program Files\\JetBrains\\IntelliJ IDEA Community Edition 2019.3.1\\bin;&#34;,
+  &#34;JetBrains Rider&#34;: &#34;C:\\Program Files\\JetBrains\\JetBrains Rider 2020.1.0\\bin;&#34;,
+  &#34;KINECTSDK10_DIR&#34;: &#34;C:\\Program Files\\Microsoft SDKs\\Kinect\\v1.8\\&#34;,
+  &#34;KINECTSDK20_DIR&#34;: &#34;C:\\Program Files\\Microsoft SDKs\\Kinect\\v2.0_1409\\&#34;,
+  &#34;KINECT_TOOLKIT_DIR&#34;: &#34;C:\\Program Files\\Microsoft SDKs\\Kinect\\Developer Toolkit v1.8.0\\&#34;,
+  &#34;LANG&#34;: &#34;de_DE.UTF-8&#34;,
+  &#34;LOCALAPPDATA&#34;: &#34;C:\\Users\\Nutzer\\AppData\\Local&#34;,
+  &#34;LOGONSERVER&#34;: &#34;\\\\ECHTNIZE-PC&#34;,
+  &#34;MANPATH&#34;: &#34;C:\\Program Files\\Git\\mingw64\\local\\man;C:\\Program Files\\Git\\mingw64\\share\\man;C:\\Program Files\\Git\\usr\\local\\man;C:\\Program Files\\Git\\usr\\share\\man;C:\\Program Files\\Git\\usr\\man;C:\\Program Files\\Git\\share\\man&#34;,
+  &#34;MINGW_CHOST&#34;: &#34;x86_64-w64-mingw32&#34;,
+  &#34;MINGW_PACKAGE_PREFIX&#34;: &#34;mingw-w64-x86_64&#34;,
+  &#34;MINGW_PREFIX&#34;: &#34;C:/Program Files/Git/mingw64&#34;,
+  &#34;MSYSTEM&#34;: &#34;MINGW64&#34;,
+  &#34;MSYSTEM_CARCH&#34;: &#34;x86_64&#34;,
+  &#34;MSYSTEM_CHOST&#34;: &#34;x86_64-w64-mingw32&#34;,
+  &#34;MSYSTEM_PREFIX&#34;: &#34;C:/Program Files/Git/mingw64&#34;,
+  &#34;NUMBER_OF_PROCESSORS&#34;: &#34;16&#34;,
+  &#34;NVM_HOME&#34;: &#34;C:\\Users\\Nutzer\\AppData\\Roaming\\nvm&#34;,
+  &#34;NVM_SYMLINK&#34;: &#34;C:\\Program Files\\nodejs&#34;,
+  &#34;ORIGINAL_PATH&#34;: &#34;C:\\Program Files\\Git\\mingw64\\bin;C:\\Program Files\\Git\\usr\\bin;C:\\Users\\Nutzer\\bin;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0;C:\\Windows\\System32\\OpenSSH;C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common;C:\\Program Files\\Git\\cmd;C:\\Program Files (x86)\\Windows Live\\Shared;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0;C:\\WINDOWS\\System32\\OpenSSH;C:\\Program Files\\IDM Computer Solutions\\UltraEdit;C:\\Users\\Nutzer\\AppData\\Roaming\\nvm;C:\\Program Files\\nodejs;C:\\Program Files\\CMake\\bin;C:\\Program Files\\nodejs;C:\\Program Files\\NVIDIA Corporation\\NVIDIA app\\NvDLISR;C:\\Program Files (x86)\\Common Files\\Acronis\\SnapAPI;C:\\Program Files (x86)\\Common Files\\Acronis\\VirtualFile;C:\\Program Files (x86)\\Common Files\\Acronis\\VirtualFile64;C:\\Users\\Nutzer\\.cargo\\bin;C:\\Users\\Nutzer\\AppData\\Local\\Microsoft\\WindowsApps;C:\\Users\\Nutzer\\AppData\\Local\\GitHubDesktop\\bin;C:\\Program Files\\JetBrains\\IntelliJ IDEA Community Edition 2019.3.1\\bin;C:\\Program Files\\JetBrains\\JetBrains Rider 2020.1.0\\bin;C:\\Users\\Nutzer\\AppData\\Local\\Microsoft\\WindowsApps;C:\\Program Files\\MariaDB 10.6\\bin;C:\\Users\\Nutzer\\AppData\\Local\\Programs\\Microsoft VS Code\\bin;C:\\GTK\\bin;C:\\Users\\Nutzer\\AppData\\Roaming\\nvm;C:\\Program Files\\nodejs;C:\\Users\\Nutzer\\AppData\\Roaming\\npm;C:\\Program Files\\ffmpeg\\bin;C:\\Users\\Nutzer\\AppData\\Roaming\\Amazon;C:\\Users\\Nutzer\\AppData\\Local\\Programs\\MiKTeX\\miktex\\bin\\x64&#34;,
+  &#34;ORIGINAL_TEMP&#34;: &#34;C:/Users/Nutzer/AppData/Local/Temp&#34;,
+  &#34;ORIGINAL_TMP&#34;: &#34;C:/Users/Nutzer/AppData/Local/Temp&#34;,
+  &#34;OS&#34;: &#34;Windows_NT&#34;,
+  &#34;OneDrive&#34;: &#34;C:\\Users\\Nutzer\\OneDrive&#34;,
+  &#34;PATH&#34;: &#34;C:\\Users\\Nutzer\\bin;C:\\Program Files\\Git\\mingw64\\bin;C:\\Program Files\\Git\\usr\\local\\bin;C:\\Program Files\\Git\\usr\\bin;C:\\Program Files\\Git\\usr\\bin;C:\\Program Files\\Git\\mingw64\\bin;C:\\Program Files\\Git\\usr\\bin;C:\\Users\\Nutzer\\bin;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0;C:\\Windows\\System32\\OpenSSH;C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common;C:\\Program Files\\Git\\cmd;C:\\Program Files (x86)\\Windows Live\\Shared;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0;C:\\WINDOWS\\System32\\OpenSSH;C:\\Program Files\\IDM Computer Solutions\\UltraEdit;C:\\Users\\Nutzer\\AppData\\Roaming\\nvm;C:\\Program Files\\nodejs;C:\\Program Files\\CMake\\bin;C:\\Program Files\\nodejs;C:\\Program Files\\NVIDIA Corporation\\NVIDIA app\\NvDLISR;C:\\Program Files (x86)\\Common Files\\Acronis\\SnapAPI;C:\\Program Files (x86)\\Common Files\\Acronis\\VirtualFile;C:\\Program Files (x86)\\Common Files\\Acronis\\VirtualFile64;C:\\Users\\Nutzer\\.cargo\\bin;C:\\Users\\Nutzer\\AppData\\Local\\Microsoft\\WindowsApps;C:\\Users\\Nutzer\\AppData\\Local\\GitHubDesktop\\bin;C:\\Program Files\\JetBrains\\IntelliJ IDEA Community Edition 2019.3.1\\bin;C:\\Program Files\\JetBrains\\JetBrains Rider 2020.1.0\\bin;C:\\Users\\Nutzer\\AppData\\Local\\Microsoft\\WindowsApps;C:\\Program Files\\MariaDB 10.6\\bin;C:\\Users\\Nutzer\\AppData\\Local\\Programs\\Microsoft VS Code\\bin;C:\\GTK\\bin;C:\\Users\\Nutzer\\AppData\\Roaming\\nvm;C:\\Program Files\\nodejs;C:\\Users\\Nutzer\\AppData\\Roaming\\npm;C:\\Program Files\\ffmpeg\\bin;C:\\Users\\Nutzer\\AppData\\Roaming\\Amazon;C:\\Users\\Nutzer\\AppData\\Local\\Programs\\MiKTeX\\miktex\\bin\\x64;C:\\Program Files\\Git\\usr\\bin\\vendor_perl;C:\\Program Files\\Git\\usr\\bin\\core_perl&#34;,
+  &#34;PATHEXT&#34;: &#34;.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC&#34;,
+  &#34;PKG_CONFIG_PATH&#34;: &#34;C:\\Program Files\\Git\\mingw64\\lib\\pkgconfig;C:\\Program Files\\Git\\mingw64\\share\\pkgconfig&#34;,
+  &#34;PLINK_PROTOCOL&#34;: &#34;ssh&#34;,
+  &#34;PROCESSOR_ARCHITECTURE&#34;: &#34;AMD64&#34;,
+  &#34;PROCESSOR_IDENTIFIER&#34;: &#34;AMD64 Family 23 Model 113 Stepping 0, AuthenticAMD&#34;,
+  &#34;PROCESSOR_LEVEL&#34;: &#34;23&#34;,
+  &#34;PROCESSOR_REVISION&#34;: &#34;7100&#34;,
+  &#34;PROGRAMFILES&#34;: &#34;C:\\Program Files&#34;,
+  &#34;PSModulePath&#34;: &#34;C:\\Program Files\\WindowsPowerShell\\Modules;C:\\WINDOWS\\system32\\WindowsPowerShell\\v1.0\\Modules&#34;,
+  &#34;PUBLIC&#34;: &#34;C:\\Users\\Public&#34;,
+  &#34;PWD&#34;: &#34;D:/git/nashlimon.de&#34;,
+  &#34;ProgramData&#34;: &#34;C:\\ProgramData&#34;,
+  &#34;ProgramFiles(x86)&#34;: &#34;C:\\Program Files (x86)&#34;,
+  &#34;ProgramW6432&#34;: &#34;C:\\Program Files&#34;,
+  &#34;SESSIONNAME&#34;: &#34;Console&#34;,
+  &#34;SHELL&#34;: &#34;C:\\Program Files\\Git\\usr\\bin\\bash.exe&#34;,
+  &#34;SHLVL&#34;: &#34;1&#34;,
+  &#34;SSH_ASKPASS&#34;: &#34;C:/Program Files/Git/mingw64/libexec/git-core/git-gui--askpass&#34;,
+  &#34;SYSTEMDRIVE&#34;: &#34;C:&#34;,
+  &#34;SYSTEMROOT&#34;: &#34;C:\\WINDOWS&#34;,
+  &#34;TEMP&#34;: &#34;C:\\Users\\Nutzer\\AppData\\Local\\Temp&#34;,
+  &#34;TERM&#34;: &#34;xterm&#34;,
+  &#34;TMP&#34;: &#34;C:\\Users\\Nutzer\\AppData\\Local\\Temp&#34;,
+  &#34;TMPDIR&#34;: &#34;C:\\Users\\Nutzer\\AppData\\Local\\Temp&#34;,
+  &#34;USERDOMAIN&#34;: &#34;ECHTNIZE-PC&#34;,
+  &#34;USERDOMAIN_ROAMINGPROFILE&#34;: &#34;ECHTNIZE-PC&#34;,
+  &#34;USERNAME&#34;: &#34;Nutzer&#34;,
+  &#34;USERPROFILE&#34;: &#34;C:\\Users\\Nutzer&#34;,
+  &#34;VBOX_HWVIRTEX_IGNORE_SVM_IN_USE&#34;: &#34;1&#34;,
+  &#34;VBOX_MSI_INSTALL_PATH&#34;: &#34;C:\\Program Files\\Oracle\\VirtualBox\\&#34;,
+  &#34;WINDIR&#34;: &#34;C:\\WINDOWS&#34;,
+  &#34;__PSLockDownPolicy&#34;: &#34;0&#34;
+}
+</pre>
+<h1>process.arch </h1>
+<pre>
+x64
+</pre>
+<h1>public</h1>
+<pre>
+{
+  &#34;_contents&#34;: [
+    &#34;01-vorstellung.html&#34;,
+    &#34;about.html&#34;,
+    &#34;CNAME&#34;,
+    &#34;data.html&#34;,
+    &#34;datenschutz.html&#34;,
+    &#34;impressum.html&#34;,
+    &#34;index.html&#34;,
+    &#34;kontakt.html&#34;,
+    &#34;sitemap.xml&#34;
+  ],
+  &#34;_data&#34;: {
+    &#34;index&#34;: {
+      &#34;title&#34;: &#34;Наш Лимон&#34;,
+      &#34;description&#34;: &#34;Путь к финансовой независимости в Германии для русскоязычных.&#34;,
+      &#34;keywords&#34;: &#34;Путь к финансовой независимости в Германии для русскоязычных&#34;
+    },
+    &#34;about&#34;: {
+      &#34;title&#34;: &#34;DIOSA KOSMETIK - About&#34;,
+      &#34;description&#34;: &#34;Über Diosa&#34;,
+      &#34;keywords&#34;: &#34;kosmetik dortmund essen bochum kosmetik studio haut wimpern augenbrauen kopfhaut haare&#34;,
+      &#34;purecounter_customer&#34;: 450,
+      &#34;purecounter_services&#34;: 25,
+      &#34;purecounter_consulting&#34;: 710,
+      &#34;purecounter_worker&#34;: 2
+    },
+    &#34;impressum&#34;: {
+      &#34;title&#34;: &#34;DIOSA KOSMETIK - Impressum&#34;,
+      &#34;description&#34;: &#34;Impressum&#34;,
+      &#34;keywords&#34;: &#34;kosmetik dortmund essen bochum kosmetik studio haut wimpern augenbrauen kopfhaut haare&#34;
+    },
+    &#34;contact&#34;: {
+      &#34;title&#34;: &#34;DIOSA KOSMETIK - Kontakt&#34;,
+      &#34;description&#34;: &#34;Kontakt&#34;,
+      &#34;keywords&#34;: &#34;kosmetik dortmund essen bochum kosmetik studio haut wimpern augenbrauen kopfhaut haare&#34;
+    },
+    &#34;portfolio-details&#34;: {
+      &#34;layout&#34;: false
+    },
+    &#34;sitemap.xml&#34;: {
+      &#34;layout&#34;: false
+    }
+  },
+  &#34;css&#34;: {
+    &#34;_data&#34;: {}
+  },
+  &#34;img&#34;: {
+    &#34;_contents&#34;: [
+      &#34;blog_1.png&#34;,
+      &#34;limon.png&#34;,
+      &#34;logo-removebg-preview.png&#34;,
+      &#34;logo.png&#34;
+    ],
+    &#34;_data&#34;: {},
+    &#34;favicon&#34;: {
+      &#34;_contents&#34;: [
+        &#34;android-chrome-192x192.png&#34;,
+        &#34;android-chrome-512x512.png&#34;,
+        &#34;apple-touch-icon.png&#34;,
+        &#34;favicon-16x16.png&#34;,
+        &#34;favicon-32x32.png&#34;,
+        &#34;favicon.ico&#34;,
+        &#34;site.webmanifest&#34;
+      ],
+      &#34;_data&#34;: {}
+    }
+  }
+}
+</pre>
+<h1>public._data</h1>
+<pre>
+{
+  &#34;index&#34;: {
+    &#34;title&#34;: &#34;Наш Лимон&#34;,
+    &#34;description&#34;: &#34;Путь к финансовой независимости в Германии для русскоязычных.&#34;,
+    &#34;keywords&#34;: &#34;Путь к финансовой независимости в Германии для русскоязычных&#34;
+  },
+  &#34;about&#34;: {
+    &#34;title&#34;: &#34;DIOSA KOSMETIK - About&#34;,
+    &#34;description&#34;: &#34;Über Diosa&#34;,
+    &#34;keywords&#34;: &#34;kosmetik dortmund essen bochum kosmetik studio haut wimpern augenbrauen kopfhaut haare&#34;,
+    &#34;purecounter_customer&#34;: 450,
+    &#34;purecounter_services&#34;: 25,
+    &#34;purecounter_consulting&#34;: 710,
+    &#34;purecounter_worker&#34;: 2
+  },
+  &#34;impressum&#34;: {
+    &#34;title&#34;: &#34;DIOSA KOSMETIK - Impressum&#34;,
+    &#34;description&#34;: &#34;Impressum&#34;,
+    &#34;keywords&#34;: &#34;kosmetik dortmund essen bochum kosmetik studio haut wimpern augenbrauen kopfhaut haare&#34;
+  },
+  &#34;contact&#34;: {
+    &#34;title&#34;: &#34;DIOSA KOSMETIK - Kontakt&#34;,
+    &#34;description&#34;: &#34;Kontakt&#34;,
+    &#34;keywords&#34;: &#34;kosmetik dortmund essen bochum kosmetik studio haut wimpern augenbrauen kopfhaut haare&#34;
+  },
+  &#34;portfolio-details&#34;: {
+    &#34;layout&#34;: false
+  },
+  &#34;sitemap.xml&#34;: {
+    &#34;layout&#34;: false
+  }
+}
+</pre>
+</div>
+</section>
+</main>
+<!-- Footer -->
+<footer class="bg-light text-dark pt-5 pb-4">
+<div class="container text-md-left">
+<div class="row">
+<!-- Компания -->
+<div class="col-md-3 col-lg-3 col-xl-3 mx-auto mt-3">
+<h5 class="text-uppercase mb-4 font-weight-bold">Компания</h5>
+<p><a href="#" class="text-dark text-decoration-none">О нас</a></p>
+<p><a href="#" class="text-dark text-decoration-none">Услуги</a></p>
+<p><a href="#" class="text-dark text-decoration-none">Блог</a></p>
+<p><a href="#" class="text-dark text-decoration-none">Контакты</a></p>
+</div>
+<!-- Полезное -->
+<div class="col-md-2 col-lg-2 col-xl-2 mx-auto mt-3">
+<h5 class="text-uppercase mb-4 font-weight-bold">Полезное</h5>
+<p><a href="#" class="text-dark text-decoration-none">Импресум</a></p>
+<p><a href="#" class="text-dark text-decoration-none">Политика конфиденциальности</a></p>
+<p><a href="#" class="text-dark text-decoration-none">Условия использования</a></p>
+</div>
+<!-- Контакты -->
+<div class="col-md-4 col-lg-3 col-xl-3 mx-auto mt-3">
+<h5 class="text-uppercase mb-4 font-weight-bold">Контакты</h5>
+<p><i class="bi bi-house-door-fill me-2"></i> Dortmund, Deutschland</p>
+<p><i class="bi bi-envelope-fill me-2"></i> info@nashlimon.de</p>
+<p><i class="bi bi-telephone-fill me-2"></i> +...</p>
+</div>
+<!-- Социальные сети -->
+<div class="col-md-3 col-lg-4 col-xl-3 mx-auto mt-3">
+<h5 class="text-uppercase mb-4 font-weight-bold">Следите за нами</h5>
+<div class="d-flex justify-content-start">
+<a target="_blank" href="https://www.youtube.com/@nashlimon" class="social-btn youtube me-3"><i class="bi bi-youtube"></i></a>
+<a target="_blank" href="https://www.tiktok.com/@nashlimon.de" class="social-btn tiktok me-3"><i class="bi bi-tiktok"></i></a>
+<a target="_blank" href="https://www.instagram.com/nashlimon" class="social-btn instagram me-3"><i class="bi bi-instagram"></i></a>
+<!--<a target="_blank" href="https://www.instagram.com/nashlimon" class="social-btn twitter me-3"><i class="bi bi-twitter"></i></a>-->
+<a target="_blank" href="https://t.me/nashlimon" class="social-btn telegram me-3"><i class="bi bi-telegram"></i></a>
+</div>
+</div>
+</div>
+<hr class="my-3">
+<!-- Copyright -->
+<div class="row d-flex justify-content-center">
+<div class="col-md-7 col-lg-8 text-center">
+<p>© 2026 Все права защищены
+| <a href="impressum.html" class="text-dark text-decoration-none">Impressum</a>
+| <a href="datenschutz.html" class="text-dark text-decoration-none">Datenschutzerklärung</a>
+</p>
+</div>
+</div>
+</div>
+</footer>
+<!-- Bootstrap Icons -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+<!-- Social Media Styles -->
+<style>
+.social-btn {
+display: inline-flex;
+align-items: center;
+justify-content: center;
+width: 42px;
+height: 42px;
+border-radius: 50%;
+color: white;
+font-size: 1.3rem;
+transition: transform 0.3s, box-shadow 0.3s;
+}
+.social-btn:hover {
+transform: scale(1.2);
+box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+}
+.youtube { background: #FF0000; }
+.tiktok { background: linear-gradient(45deg,#222,#555); }
+.instagram { background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fd5949 45%, #d6249f 60%, #285AEB 90%); }
+.telegram { background: #0088cc; }
+.twitter { background: #1DA1F2; }
+</style>
+<!-- Bootstrap JS -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+<!-- ===================== -->
+<!-- COOKIE BANNER -->
+<!-- ===================== -->
+<style>
+#cookie-banner {
+position: fixed;
+bottom: 0;
+left: 50%;
+width: 25%;
+background: #ffffff;
+border-top: 1px solid #ddd;
+padding: 20px;
+z-index: 9999;
+box-shadow: 0 -5px 20px rgba(0,0,0,0.05);
+}
+#cookie-banner p {
+margin: 0 0 10px;
+font-size: 14px;
+color: #333;
+}
+.cookie-buttons {
+display: flex;
+gap: 10px;
+}
+.cookie-buttons button {
+border: none;
+padding: 8px 16px;
+cursor: pointer;
+font-size: 14px;
+border-radius: 5px;
+}
+.accept {
+background-color: #3a7f5a;
+color: white;
+}
+.decline {
+background-color: #ccc;
+}
+.settings {
+background-color: #f1f1f1;
+}
+</style>
+<div id="cookie-banner">
+<p>
+Wir verwenden Cookies, um unsere Website zu verbessern und Inhalte zu personalisieren.
+Einige Cookies sind notwendig, andere helfen uns bei der Analyse (z. B. Google Analytics).
+</p>
+<div class="cookie-buttons">
+<button class="accept" onclick="acceptCookies()">Alle akzeptieren</button>
+<button class="decline" onclick="declineCookies()">Nur notwendige</button>
+</div>
+</div>
+<script>
+function setCookie(name, value, days) {
+let expires = "";
+if (days) {
+let date = new Date();
+date.setTime(date.getTime() + (days*24*60*60*1000));
+expires = "; expires=" + date.toUTCString();
+}
+document.cookie = name + "=" + value + expires + "; path=/";
+}
+function getCookie(name) {
+let nameEQ = name + "=";
+let ca = document.cookie.split(';');
+for(let i=0;i < ca.length;i++) {
+let c = ca[i];
+while (c.charAt(0)==' ') c = c.substring(1,c.length);
+if (c.indexOf(nameEQ) == 0) return c.substring(nameEQ.length,c.length);
+}
+return null;
+}
+function acceptCookies() {
+setCookie('cookieConsent', 'accepted', 365);
+document.getElementById('cookie-banner').style.display = 'none';
+// Google Analytics aktivieren (Beispiel)
+loadAnalytics();
+}
+function declineCookies() {
+setCookie('cookieConsent', 'declined', 365);
+document.getElementById('cookie-banner').style.display = 'none';
+}
+function loadAnalytics() {
+// HIER DEINE GOOGLE ANALYTICS ID EINSETZEN
+let script = document.createElement('script');
+script.src = "https://www.googletagmanager.com/gtag/js?id=G-GFHZNXR9VW";
+script.async = true;
+document.head.appendChild(script);
+window.dataLayer = window.dataLayer || [];
+function gtag(){dataLayer.push(arguments);}
+gtag('js', new Date());
+gtag('config', 'G-GFHZNXR9VW', { 'anonymize_ip': true });
+}
+window.onload = function() {
+let consent = getCookie('cookieConsent');
+if(consent === 'accepted') {
+document.getElementById('cookie-banner').style.display = 'none';
+loadAnalytics();
+}
+};
+</script>
+</body>
+</html>
