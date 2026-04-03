@@ -8,11 +8,28 @@
       "paypal_website": "https://www.paypal.com/de/campaign/invite/terms",
       "paypal_link": "https://py.pl/12ftWY",
       "paypal_reward": "10 €",
+      "ionos_link":"https://ionos.aklamio.com/de-de",      
+      "ionos_reward":"bis zu 300 €",
+      "adac_website":"https://www.adac.de/mitgliedschaft/mitglieder-werben-mitglieder/freunde-werben-a-b-test/",
+      "adac_link":"...",
+      "adac_reward":"50 €",
+      "adac_hint":"link 30 tage gültig",
+      "booking_website":"https://www.booking.com/content/referral-faq.de.html",
+      "telekom_website":"https://www.telekom-empfehlen.de/young",
+      "telekom_reward":"50 €",
+      
+      "comdirect_website":"https://www.comdirect.de/pbl/cms/kundenwerbung.html?CIF_Check=true",
+      "comdirect_reward":"50 €",
+
+      "americanexpress_website":"https://www.comdirect.de/pbl/cms/kundenwerbung.html",
+      
+
       "santander_website": "https://santander.aklamio.de/",
       "santander_bestgiro": "https://aklam.io/oslQtKd7",
       "santander_bestgiro_reward": "50 €",
       "santander_bestcardbasic": "https://aklam.io/hX4SerxY",
       "santander_bestcardbasic_reward": "20 €"
+      
     },
     "social": {
       "web": "https://nashlimon.de",

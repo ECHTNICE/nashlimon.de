@@ -6,6 +6,7 @@
 <title>Наш Лимон</title>
 <link rel="apple-touch-icon" sizes="180x180" href="img/favicon/apple-touch-icon.png">
 <link rel="icon" type="image/png" sizes="32x32" href="img/favicon/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="48x48" href="img/favicon/favicon-48x48.png">
 <link rel="icon" type="image/png" sizes="16x16" href="img/favicon/favicon-16x16.png">
 <link rel="manifest" href="img/favicon/site.webmanifest">
 <!-- Bootstrap 5 CDN -->
@@ -14,10 +15,10 @@
 </head>
 <body>
 <!-- Navbar -->
-<nav class="navbar navbar-expand-lg bg-white border-bottom">
+<nav class="navbar navbar-expand-lg bg-white border-bottom fixed-top">
 <div class="container">
 <a class="navbar-brand d-flex align-items-center" href="/">
-<img src="img/logo.png" alt="Logo">
+<img src="img/logo-192x192.png" alt="Logo">
 <strong>Наш Лимон €</strong>
 </a>
 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#nav">
@@ -32,12 +33,17 @@
 </div>
 </div>
 </nav>
+<div class="container mt-5">
+<div class="content">
+<div class="row mx-auto">
+</div>
+</div>
+</div>
 <!-- Hero -->
 <section class="hero text-center">
 <div class="container">
 <h1>Добро пожаловать в Наш Лимон клуб</h1>
 <h2>Путь к финансовой независимости в Германии для русскоязычных</h2>
-<img src="img/logo.png" alt="Hero Logo" class="img-thumbnail img-fluid" style="max-width: 40%;border:0;">
 </div>
 </section>
 <!-- Blog Posts -->
@@ -91,11 +97,15 @@
 <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mt-3">
 <h5 class="text-uppercase mb-4 font-weight-bold">Следите за нами</h5>
 <div class="d-flex justify-content-start">
-<a target="_blank" href="https://www.youtube.com/@nashlimon" class="social-btn youtube me-3"><i class="bi bi-youtube"></i></a>
-<a target="_blank" href="https://www.tiktok.com/@nashlimon.de" class="social-btn tiktok me-3"><i class="bi bi-tiktok"></i></a>
-<a target="_blank" href="https://www.instagram.com/nashlimon" class="social-btn instagram me-3"><i class="bi bi-instagram"></i></a>
+<a target="_blank" href="https://www.youtube.com/@nashlimon" class="social-btn youtube me-3"><i
+class="bi bi-youtube"></i></a>
+<a target="_blank" href="https://www.tiktok.com/@nashlimon.de" class="social-btn tiktok me-3"><i
+class="bi bi-tiktok"></i></a>
+<a target="_blank" href="https://www.instagram.com/nashlimon" class="social-btn instagram me-3"><i
+class="bi bi-instagram"></i></a>
 <!--<a target="_blank" href="https://www.instagram.com/nashlimon" class="social-btn twitter me-3"><i class="bi bi-twitter"></i></a>-->
-<a target="_blank" href="https://t.me/nashlimon" class="social-btn telegram me-3"><i class="bi bi-telegram"></i></a>
+<a target="_blank" href="https://t.me/nashlimon" class="social-btn telegram me-3"><i
+class="bi bi-telegram"></i></a>
 </div>
 </div>
 </div>
@@ -122,13 +132,13 @@
 #cookie-banner {
 position: fixed;
 bottom: 0;
-left: 50%;
-width: 25%;
+left: 0;
+width: 100%;
 background: #ffffff;
 border-top: 1px solid #ddd;
 padding: 20px;
 z-index: 9999;
-box-shadow: 0 -5px 20px rgba(0,0,0,0.05);
+box-shadow: 0 -5px 20px rgba(0, 0, 0, 0.05);
 }
 #cookie-banner p {
 margin: 0 0 10px;
@@ -167,54 +177,7 @@ Einige Cookies sind notwendig, andere helfen uns bei der Analyse (z. B. Google A
 <button class="decline" onclick="declineCookies()">Nur notwendige</button>
 </div>
 </div>
-<script>
-function setCookie(name, value, days) {
-let expires = "";
-if (days) {
-let date = new Date();
-date.setTime(date.getTime() + (days*24*60*60*1000));
-expires = "; expires=" + date.toUTCString();
-}
-document.cookie = name + "=" + value + expires + "; path=/";
-}
-function getCookie(name) {
-let nameEQ = name + "=";
-let ca = document.cookie.split(';');
-for(let i=0;i < ca.length;i++) {
-let c = ca[i];
-while (c.charAt(0)==' ') c = c.substring(1,c.length);
-if (c.indexOf(nameEQ) == 0) return c.substring(nameEQ.length,c.length);
-}
-return null;
-}
-function acceptCookies() {
-setCookie('cookieConsent', 'accepted', 365);
-document.getElementById('cookie-banner').style.display = 'none';
-// Google Analytics aktivieren (Beispiel)
-loadAnalytics();
-}
-function declineCookies() {
-setCookie('cookieConsent', 'declined', 365);
-document.getElementById('cookie-banner').style.display = 'none';
-}
-function loadAnalytics() {
-// HIER DEINE GOOGLE ANALYTICS ID EINSETZEN
-let script = document.createElement('script');
-script.src = "https://www.googletagmanager.com/gtag/js?id=G-GFHZNXR9VW";
-script.async = true;
-document.head.appendChild(script);
-window.dataLayer = window.dataLayer || [];
-function gtag(){dataLayer.push(arguments);}
-gtag('js', new Date());
-gtag('config', 'G-GFHZNXR9VW', { 'anonymize_ip': true });
-}
-window.onload = function() {
-let consent = getCookie('cookieConsent');
-if(consent === 'accepted') {
-document.getElementById('cookie-banner').style.display = 'none';
-loadAnalytics();
-}
-};
-</script>
+<!-- main -->
+<script src="js/main.js"></script>
 </body>
 </html>
