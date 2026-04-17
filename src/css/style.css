@@ -18,9 +18,11 @@
     font-weight: 600;
     
  }
- h2 button{
+ h2 button.accordion-button{
     font-weight: 750;
+    font-size: 1.2rem !important;
  }
+ 
 
  h3{
     font-weight: bold;
